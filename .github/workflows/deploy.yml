@@ -1,0 +1,55 @@
+name: Build and Deploy Gatsby to GitHub Pages Repo
+
+on:
+  push:
+    branches: [main]
+
+env:
+  DEPLOY_REPO: git@github.com:MTCMarketing/website--fsm-drawings.git
+  WEBSITE_URL: www.fsmdrawings.com
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Source Repo
+        uses: actions/checkout@v3
+
+      - name: 🛠 Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: 📦 Install Dependencies
+        run: npm install
+
+      - name: 🛠 Ensure Gatsby CLI Is Installed
+        run: npm install gatsby --save
+
+      - name: 🏗 Build Gatsby Site
+        run: npx gatsby build
+
+      - name: 📝 Write CNAME File
+        run: |
+          mkdir -p public
+          echo "${{ env.WEBSITE_URL }}" > public/CNAME
+
+      - name: 🔐 Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.ACTIONS_DEPLOY_LIVE }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: 🚀 Deploy to GitHub Pages Repo
+        run: |
+          cd public
+          git init
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git checkout -b main
+          git remote add origin ${{ env.DEPLOY_REPO }}
+          git add .
+          git commit -m "Deploy from Gatsby build"
+          git push -f origin main
