@@ -33,10 +33,6 @@ const ServicesSection = () => {
               <li>Code-compliant drawings</li>
               <li>Quality control focus</li>
             </ul>
-            <div className="service-cta">
-              <span>Learn more</span>
-              <FaArrowRight className="arrow-icon" />
-            </div>
             <div className="card-corner"></div>
           </div>
 
@@ -58,10 +54,6 @@ const ServicesSection = () => {
               <li>New construction drafting</li>
               <li>On-site measuring & data collection</li>
             </ul>
-            <div className="service-cta">
-              <span>Learn more</span>
-              <FaArrowRight className="arrow-icon" />
-            </div>
             <div className="card-corner"></div>
           </div>
 
@@ -83,10 +75,6 @@ const ServicesSection = () => {
               <li>Manufacturer-focused solutions</li>
               <li>Easy-to-implement designs</li>
             </ul>
-            <div className="service-cta">
-              <span>Learn more</span>
-              <FaArrowRight className="arrow-icon" />
-            </div>
             <div className="card-corner"></div>
           </div>
 
@@ -108,10 +96,6 @@ const ServicesSection = () => {
               <li>Coordination and overlay plans</li>
               <li>Existing plan modifications</li>
             </ul>
-            <div className="service-cta">
-              <span>Learn more</span>
-              <FaArrowRight className="arrow-icon" />
-            </div>
             <div className="card-corner"></div>
           </div>
         </div>

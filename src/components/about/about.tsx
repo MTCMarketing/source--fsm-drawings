@@ -23,7 +23,7 @@ const AboutSection = () => {
             <h2 className="profile-name">Adam C. DiMauro</h2>
             <p className="profile-title">Operations Manager & Owner</p>
             <p className="profile-bio">
-              With nearly 30 years of experience in architectural design, Adam leads FSM with a strong foundation in residential and commercial projects across New England. His expertise spans providing drafting and support services for diverse clients in the A/E/C industry, manufacturing, and building contracting.
+              FSM Drawings Inc. is a trusted local design company in Manchester, N.H. with years of exceptional service throughout northern New England and is dedicated to helping you create the home of your dreams. From custom home designing to one-of-a-kind home additions, we approach every project as a unique opportunity to create something beautiful and exceed our clients’ expectations. We invite you to contact Adam, owner and co-founder of FSM Drawings LLC, to discuss how we can help you with your next project.
             </p>
           </div>
           

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaBars, FaTimes, FaChevronDown, FaStar, FaClock } from 'react-icons/fa';
 import './nav.css';
-import image from '../../images/logo.png';
+import image from '../../images/logo.jpg';
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);

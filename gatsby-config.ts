@@ -8,7 +8,20 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `FSM Drawings`,
+        short_name: `FSM`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#4A74A5`,
+        display: `minimal-ui`,
+        icon: `src/images/logo.jpg`,
+      },
+    },
+  ],
 }
 
 export default config
