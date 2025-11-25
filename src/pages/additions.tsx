@@ -32,7 +32,7 @@ const BeforeAfterGallery: React.FC = () => {
       beforeImages: [
         'https://ik.imagekit.io/dloitl7fd8/img-5-before.JPG',
         'https://ik.imagekit.io/dloitl7fd8/img-6-before.JPG',
-      
+          'https://ik.imagekit.io/dloitl7fd8/img-3-before.JPG'
       ],
       afterImages: [
         afterImage,
