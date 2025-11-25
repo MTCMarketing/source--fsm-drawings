@@ -3,7 +3,7 @@ import { FaArrowLeft, FaArrowRight, FaTimes, FaHome } from 'react-icons/fa';
 import '../components/stylrs/BeforeAfterGallery.css';
 import afterImage from '../images/DEERFIELD NH VET/AFTER/img-4-after.jpg'
 import afterImage2 from '../images/DEERFIELD NH VET/AFTER/img-5-after.jpg'
-import im4bwerfore from '../images/DEERFIELD NH VET/BEFORE/img-4-before.jpg'
+import im4bwerfore from '../images/DEERFIELD NH VET/BEFORE/img-6-before.jpg'
 import img4after from '../images/DEERFIELD NH VET/AFTER/img-3-after.jpg'
 import imgbefore12 from '../images/SZEKELY RESIDENCE MELROSE MA/BEFORE/img-18-before.jpg'
 import imgbefore13 from '../images/SZEKELY RESIDENCE MELROSE MA/BEFORE/img-19-before.jpg'
